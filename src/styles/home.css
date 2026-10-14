@@ -1,0 +1,96 @@
+.poster-container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  background-image: url("/skyline.jpg");
+  background-size: cover;
+  background-position: center; /* or 50% 70% */
+  overflow: hidden;
+  margin: 70px 0 0 0;
+}
+
+.poster-statements {
+  height: fit-content;
+  width: fit-content;
+  background-color: rgb(57, 231, 95, 0.7);
+  margin: 50vh 0 0 0;
+}
+
+.poster-statements h1 {
+  height: fit-content;
+  width: fit-content;
+  color: white;
+  padding: 35px 25px 0 30px;
+}
+
+.poster-statements h2 {
+  height: fit-content;
+  width: fit-content;
+  color: white;
+  padding: 0 0 35px 30px;
+}
+
+.poster-arrow {
+  height: 100px;
+  width: fit-content;
+  text-decoration: none;
+  font-size: 4.5rem;
+  margin: 0 auto 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50% -30px;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.poster-arrow img {
+  height: 60px;
+  width: 60px;
+  animation: floatUpDown 1.5s ease-in-out infinite;
+}
+
+.about {
+  margin-top: 70px;
+  width: 100%;
+  height: 100vh;
+}
+
+.about-content {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.headshot {
+  width: 45vw;
+  height: fit-content;
+}
+
+.about-text {
+  width: 55vw;
+  height: fit-content;
+}
+
+.headshot img {
+  width: 40vh;
+  height: 40vh;
+  margin: auto 5vw auto 10vw;
+  border-radius: 20vw;
+}
+
+.about h1,
+.experience h1,
+.services h1 {
+  width: 80%;
+  margin: 70px auto 50px auto;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
